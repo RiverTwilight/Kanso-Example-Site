@@ -28,7 +28,7 @@ fi
 
 # Stash posts to keep them safe
 echo "📦 Saving your posts..."
-git stash push -- "posts/*" "public/images/posts/*"
+git stash push -- "posts/*" "public/image/post/*"
 
 # Fetch upstream changes
 echo "⬇️ Fetching updates from upstream..."
