@@ -56,6 +56,8 @@ Intel 的集显(HD+一些数字)、AMD 的独立显卡大多都可驱动，这�
 
 ## **下载工作**
 
+### *必须下载*
+
 ~~这里的文件~~~~[参考](https://dortania.github.io/OpenCore-Install-Guide/ktext.html#must-haves)~~~~部分软件~~
 请记住他的别称（打在括号里的）
 
@@ -107,6 +109,8 @@ diskgeunis(区分工具)百度去下
 
 [AMDRadeonGPU](https://github.com/aluveitie/RadeonSensor)
 
+### **显卡**
+
 *Intel 核显 （也就是整个电脑没有显卡）*
 
 直接用这个[OC 工具箱](https://www.123pan.com/s/rd39-MkpOd)特别省事
@@ -132,12 +136,16 @@ AMD 显卡要么就是免驱
 
 且你刚好会 C++，接触过逆向工程。欢迎联系我
 
+### **声卡**
+
 声卡部分，由于不同品牌的网卡有不同的驱动方式
 
 有些事注入 ID 就好，有些需要单独加驱动，有些又无法驱动
 
 在此我帮你搜到了全网的大部分声卡驱动，剩下的你自己测试
 [声卡](https://radcliffe.vercel.app/post/hei-ping-guo-sheng-qia-qu-dong/)
+
+### **网卡**
 
 网卡部分 intel 的看[Intel](https://zhuanlan.zhihu.com/p/299695036)
 
@@ -157,6 +165,8 @@ AMD 显卡要么就是免驱
 
 请将下载好的文件分好类。
 
+### *地基*
+
 将「最简 EFI」解压到你找到地方
 
 删除 Tools 文件夹下的所有东西
@@ -164,6 +174,8 @@ AMD 显卡要么就是免驱
 把 Drivers 文件下删得只剩 OpenRuntime.efi 「！仔细理解这句话！」
 
 把[这个](https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi)放在 Drivers 里面
+
+### *ACIP*
 
 ~~这一步的目的是让系统可以控制硬件，软件控制硬件
 ~~~~[参考](https://www.bilibili.com/read/cv10117507/)~~

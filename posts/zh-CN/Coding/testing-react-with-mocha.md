@@ -130,6 +130,8 @@ module.exports = function getBabelConfig(api) {
 
 此处列举一些常见测试场景供参考：
 
+### 检查组件类型
+
 ```plain text
 import * as React from "react";
 import { expect } from "chai";
@@ -154,6 +156,8 @@ describe("<ListItem />", () => {
 });
 
 ```
+
+### 检查渲染结果
 
 ```plain text
 it("render in Container", () => {
