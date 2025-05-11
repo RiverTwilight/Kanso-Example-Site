@@ -227,3 +227,129 @@ Scope (_SB.PCI0.LPC)
 
 5.编译
 用这个指令
+
+```plain text
+acpihelp.exe -o 文件名字
+
+```
+
+**把「文件名字」 依次换成 刚刚变出来的 5 个文件**
+最后你需要确保 你可以看到 5 个以 XXX.aml 结尾的文件。
+
+6.现在，请新建一个文件夹，把文件放入，命名为「ACPI」替换在「最简 EFI』文件夹里
+
+### *配置 OpenCoreCFG*
+
+[请看](https://post.smzdm.com/p/aqm8nxvx/)，这个部分这个作者写的好，请看他
+
+以后会考虑自己写
+
+### *组装*
+
+将 **kexts 文件夹** **ACPI** 放在「最简 EFI 里」
+
+这个时候你的「最简 EFI」里会有 图 1.1 1.2
+
+![Image](/image/post/13b3032c-0204-4b35-9569-c515d16027a1_xS2aDI.png)
+
+![Image](/image/post/8882f2b3-b890-4822-8333-db70fa06eb71_xS2hV0.png)
+
+将你的「最简 EFI」重命名为 EFI
+
+```plain text
+休息下吧，看到这里
+
+辛苦啦
+
+这一步之后，就要正式开始安装了
+
+```
+
+## **开始安装**
+
+### 1.写盘
+
+用「写盘工具」将你下载映像写入 U 盘
+
+~~如果你卡在 Vailting 这个地方 跳过就好~~
+
+对于小白：当你同时看到绿色的进度条和 Skip 这个单词时直接点 **skip**
+
+### 2.进入 BIOS
+
+*以你的毕生所学，进入 bios 并且关闭（没有的不管）*
+
+```plain text
+Fast Boot
+Secure Boot
+Serial/COM Port
+Parallel Port
+VT-d
+CSM
+Thunderbolt（有些没有驱动）
+Intel SGX
+Intel Platform Trust
+CFG Lock(可以的话)
+
+```
+
+*打开*
+
+```plain text
+VT-x
+Above 4G decoding
+Hyper-Threading
+Execute Disable Bit
+EHCI/XHCI Hand-off
+OS type: other
+UEFI Mode
+DVMT Pre-Allocated: 64MB
+SATA Mode: AHCI
+
+```
+
+### 3.Boot up
+
+从你的 U 盘启动
+
+### 4.安装
+
+一、请将安装程序调成你熟悉的语言，最好不要登陆 Apple ID、不要
+
+如果你发现你下载的镜像是俄语的，且找不到地方修改它
+
+请使用翻译软件，推荐 *谷歌翻译*
+
+二、如果你是在安装 Catalina(10.15.x)之前的系统，请[参考](https://www.applex.net/threads/macos-mojave.93508/)
+
+### 善后
+
+现在，不出意外，你应该在系统里面了，
+
+有部分网卡、声卡需要别的操作的，请按照对应的教程进行
+
+三码注入部分,前面配置*OpenCoreCFG*部分
+
+另一位作者已经提到，不再赘述
+
+## 尾言
+
+文章写得很赶，有些东西自己也不太会。希望大家有耐心慢慢搞。
+
+苹果发布 M1 型片后，就不知道黑苹果还能活多久。且行且珍惜
+
+如果你是 vega8 用户，又刚好会 C++写驱动，可以带你去找找国外的进度
+
+感谢那些曾经为黑苹果默默做出贡献的开发者！
+
+此致
+
+——————————————————————————
+
+转载请注明出处，可以二创。
+
+如果你在安装时遇到问题，可在电报上联系我：[Charles](https://www.notion.so/rivertwilight/t.me/Mistry_Rain)
+
+所有的操作均来自互联网，遇到问题请你自己负责！
+
+文章已授权 [Gloridust](https://gloridust.xyz/) [Rene](https://rene.wang/)发布
