@@ -5,7 +5,7 @@ summary: 开源项目的盈利方式之一便是“捐赠”，好多开发者�
 keywords:
   - Donation Strategies
   - User Engagement
-  - Open Source Funding
+  - Open Source
 ---
 
 

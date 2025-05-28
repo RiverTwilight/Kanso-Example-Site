@@ -2,6 +2,8 @@
 title: 使用 Mocha + chai 测试 React 应用
 date: 2023-04-12T01:23:00.000Z
 summary:  ---    最近在继续开发之前的 [Kindle UI](https://github.com/
+keywords:
+  - Open Source
 ---
 
 
